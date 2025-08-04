@@ -1,0 +1,89 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.cdnfonts.com/s/15473/PressStart2P-Regular.woff') format('woff');
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background-color: #333;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #000;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: none;
+}
+
+.game-screen {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px #ff5722;
+    width: 80%;
+    max-width: 400px;
+    position: absolute;
+    z-index: 10;
+}
+
+.game-screen h1 {
+    color: #ffeb3b;
+    text-shadow: 2px 2px #000;
+}
+
+.start-screen p,
+.checkpoint-screen p,
+.game-over-screen p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.game-over-screen p {
+    color: #ff5722;
+    text-shadow: 1px 1px #000;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 #2e7d32;
+    transition: all 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #66bb6a;
+    box-shadow: 2px 2px 0 #2e7d32;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
